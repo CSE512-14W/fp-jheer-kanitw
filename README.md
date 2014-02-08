@@ -10,6 +10,9 @@ fp-jheer-kanitw
 
 This is an example repository for the final project submission.  (Put your abstract from your final paper here.)
 
+[Poster](final/poster-jheer-kanitw.pdf),
+[Final Paper](final/paper-jheer-kanitw.pdf) 
+
 ## Running Instructions
 
 Put your running instructions here.  (Tell us how to open your visualization.) 
