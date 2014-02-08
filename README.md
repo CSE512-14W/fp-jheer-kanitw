@@ -10,8 +10,8 @@ fp-jheer-kanitw
 
 This is an example repository for the final project submission.  (Put your abstract from your final paper here.)
 
-[Poster](https://github.com/CSE512-14W/fp-jheer-kanitw/blob/master/final/poster-jheer-kanitw.pdf),
-[Final Paper](https://github.com/CSE512-14W/fp-jheer-kanitw/blob/master/final/paper-jheer-kanitw.pdf) 
+[Poster](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/poster-jheer-kanitw.pdf),
+[Final Paper](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/paper-jheer-kanitw.pdf) 
 
 ## Running Instructions
 
