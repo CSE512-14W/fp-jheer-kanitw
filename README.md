@@ -1,8 +1,6 @@
 Project Name
 ===============
-Jeffrer Heer, Kanit Wongsuphasawat
-
-{jheer,kanitw}@uw.edu
+Jeffrer Heer, Kanit Wongsuphasawat {jheer,kanitw}@uw.edu
 
 
 ![Overview](overview.png)
