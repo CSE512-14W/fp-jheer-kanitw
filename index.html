@@ -1,70 +1,68 @@
-<!-- A choropleth example by Mike Bostock.  Originally from http://bl.ocks.org/mbostock/4060606-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
+<head>
+  <title>CSE512: Data Visualization</title>
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" type="text/css" href="http://courses.cs.washington.edu/courses/cse512/14wi/style.css"/>
 
-.counties {
-  fill: none;
-}
+</head>
 
-.states {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
-}
-
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
-
-</style>
 <body>
-Acknowledgement:  This "Choropleth" example is originally from Mike Bostock's work at http://bl.ocks.org/mbostock/4060606.
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/queue.v1.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script>
+  <div class='content wider'>
 
-var width = 960,
-    height = 500;
+    <div class='title'>
+      <a href="http://courses.cs.washington.edu/courses/cse512/14wi/"><strong>CSE512</strong></a>
+         Projects
+         <small>(Winter 2014)</small>
+    </div>
+    <br/>
 
-var rateById = d3.map();
+    <div class='pub' data-spy="scroll" data-target=".navbar">
 
-var quantize = d3.scale.quantize()
-    .domain([0, .15])
-    .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
+      <h1 class="title">Final Project Template</h1>
+      <div class="authors">
+        <a href="http://jheer.org">Jeffrey Heer</a>,
+        <a href="http://kanitw.yellowpigz.com">Kanit Wongsuphasawat</a>
+      </div>
 
-var path = d3.geo.path();
+      <div class="figure">
+        <img src="http://idl.cs.washington.edu/static/images/projects/lyra/playfair-new.png" width="100%"/>
+        <div class="caption">William Playfair’s classic chart comparing the price of wheat and wages in England recreated in the Lyra VDE.</div>
+      </div>
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
 
-queue()
-    .defer(d3.json, "us.json")
-    .defer(d3.tsv, "unemployment.tsv", function(d) { rateById.set(d.id, +d.rate); })
-    .await(ready);
+      <p>
+        Acknowledgement: Example abstract, images and videos are from Lyra. <br/><br/>
+        Lyra is an interactive environment that enables custom visualization design without writing any code. Graphical “marks” can be bound to data fields using property drop zones; dynamically positioned using connectors; and directly moved, rotated, and resized using handles. Lyra also provides a data pipeline interface for iterative visual specification of data transformations and layout algorithms. Lyra is more expressive than interactive systems like Tableau, allowing designers to create custom visualizations comparable to hand-coded visualizations built with D3 or Processing. These visualizations can then be easily published and reused on the Web.
+      </p>
 
-function ready(error, us) {
-  svg.append("g")
-      .attr("class", "counties")
-    .selectAll("path")
-      .data(topojson.feature(us, us.objects.counties).features)
-    .enter().append("path")
-      .attr("class", function(d) { return quantize(rateById.get(d.id)); })
-      .attr("d", path);
+      <h2>Materials</h2>
+      <div class="links">
+        <a href="paper-jheer-kanitw.pdf" >PDF</a>
+        |
+        <a href="poster-jheer-kanitw.pdf" >Poster</a>
+        |
+        <a href="vis.html" >Running Visualization</a>
+      </div>
 
-  svg.append("path")
-      .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-      .attr("class", "states")
-      .attr("d", path);
-}
+      <h2>Videos</h2>
+      <video width="700" height="385" controls="">
+        <source src="http://idl.cs.washington.edu/static/images/projects/lyra/Playfair-New.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-</script>
+
+      <div class='footer'>
+        <a href='http://cs.washington.edu'>Computer Science &amp; Engineering</a> -
+        <a href='http://www.washington.edu'>University of Washington</a>
+      </div>
+    </div>
+    <br/>
+    <br/>
+
+
+  </div>
+</body>
+
+</html>
