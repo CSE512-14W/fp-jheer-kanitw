@@ -1,16 +1,16 @@
 Project Name
 ===============
+Jeffrer Heer, Kanit Wongsuphasawat {jheer,kanitw}@uw.edu
 
-This is an example repository for the final project submission.  (Put your abstract from your final paper here.)
+
+![Overview](overview.png)
+
+This is an example repository for the final project submission.  Put your abstract from your final paper here.
 
 [Poster](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/poster-jheer-kanitw.pdf),
 [Final Paper](https://github.com/CSE512-14W/fp-jheer-kanitw/raw/master/final/paper-jheer-kanitw.pdf) 
 
-
-## Team Members
-
-1. Jeffrer Heer jheer@uw.edu
-2. Kanit Wongsuphasawat kanitw@uw.edu
+(Acknowledgement: example overview picture from Mike Bostock's Protovis)
 
 ## Running Instructions
 
