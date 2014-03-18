@@ -3,6 +3,11 @@ Project Name
 Jeffrer Heer, Kanit Wongsuphasawat {jheer,kanitw}@uw.edu
 
 
+A breakdown of how the work was split among the group members and a commentary on the research/development process.
+
+
+---- (If you decide not to put these info in the project page put them down here-----
+
 ![Overview](overview.png)
 
 This is an example repository for the final project submission.  Put your abstract from your final paper here.
